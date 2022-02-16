@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+###### Equipo de desarrollo
+
+Biplop Dey
+Cristian Leon 
+David Ordiales
+Juan David Quimbayo Núñez
+Marisa Posada
+Santiago Gustavo López Bernal 
+Sara González
