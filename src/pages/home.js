@@ -6,6 +6,9 @@ export default function Home() {
   return (
     <>
       <h1>Titulo</h1>
+      <button type="button" class="btn btn-primary">
+        Primary
+      </button>
       <ExperienceCardList expList={expList} />
     </>
   );
