@@ -3,6 +3,7 @@ import ExperienceDetail from "../components/experienceDetail";
 import { experienceList } from "../data/experienceData";
 import Header from "../components/Header";
 import React from "react";
+import NavBar from "../components/NavBar";
 
 export default function ExperienceView() {
   let { id } = useParams();
@@ -18,6 +19,7 @@ export default function ExperienceView() {
             price={exp.price}
             name={exp.name}
         />
+        <NavBar/>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function ExperienceCardList({ expList }) {
       <div className="scrolling row flex-nowrap">
       {expList.map((exp) => {
         return (
-          <div  className="col-9 col-sm-5 col-md-3" key={exp.id}>
+          <div  className="col-9 col-sm-5 col-lg-3" key={exp.id}>
               
             <ExperienceCard
                 id={exp.id}

@@ -10,7 +10,7 @@ export default function AdvertiserCardList({ advList }) {
         <div className="scrolling row flex-nowrap">
       {advList.map((exp) => {
         return (
-          <div  className="col-9 col-sm-5 col-md-3" key={exp.id}>
+          <div  className="col-9 col-sm-5 col-lg-3" key={exp.id}>
             <AdvertiserCard
                 id={exp.id}
                 img={exp.img}

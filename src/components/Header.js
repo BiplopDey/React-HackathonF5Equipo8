@@ -3,21 +3,20 @@ import '../styles/App.css';
 import "../styles/components/experienceCard.css";
 import "../styles/components/Header.css";
 import Logo from "../assets/localExperiences-logo.png";
-
+import Location from "../assets/geo-alt-fill.svg";
+import {Link} from "react-router-dom";
 
 export default function ExperienceCardList({ expList }) {
     return (
         <nav className="header bg-light">
                 <div className="brand-container">
-                    <a href="#">
-                        <img  src={Logo} alt="Logo"
-                            className="d-inline-block align-text-top"/>
-                    </a>
-
-                    <button type="button" id="sidebarCollapse" className="btn btn-info">
+                    <Link className="" to={`/`}>
+                        <img  src={Logo} alt="Logo" className="d-inline-block align-text-top"/>
+                    </Link>
+                    {/*<button type="button" id="sidebarCollapse" className="btn btn-info">
                         <i className="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
-                    </button>
+                    </button>*/}
                 </div>
                 <div className="d-flex justify-content-center">
                     <form className="form-inline my-2 my-lg-0">
