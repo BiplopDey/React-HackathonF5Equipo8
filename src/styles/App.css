@@ -3,6 +3,7 @@
 .scrolling{
     overflow-x: auto;
     overflow-y: hidden;
+    padding: 1rem 0;
 }
 .btn{
     border-radius: 1.5rem;
@@ -31,4 +32,8 @@ img{
 section{
     margin:2rem;
     padding: 2rem 0;
+}
+
+figcaption p, figcaption h3 {
+    margin: 0;
 }

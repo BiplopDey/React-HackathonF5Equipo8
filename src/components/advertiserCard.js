@@ -6,9 +6,9 @@ export default function advertiserCard({ id, img, name, assessment }) {
       <figure className="position-relative">
           <img src={img} alt=""/>
           <div className="card-featured position-absolute bottom-0">
-            <figcaption>{name}</figcaption>
             <figcaption>
-              {assessment}
+                <h3>{name}</h3>
+                <p>{assessment}</p>
               </figcaption>
             <button className="btn btn-primary">Ver más</button>
           </div>
