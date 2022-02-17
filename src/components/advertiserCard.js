@@ -1,5 +1,3 @@
-
-
 export default function advertiserCard({ id, img, name, assessment }) {
   return (
     <div className="card card-block">
