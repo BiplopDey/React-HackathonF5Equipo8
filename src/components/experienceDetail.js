@@ -4,14 +4,15 @@ import "../styles/components/ExperienceDetailStyle.css";
 
 function ExperienceDetail({ imageSource, title, description, price, name }) {
   return (
-    <div className="exp-detail text-center">
-      <figure className="">
+    <div className="exp-detail card text-center">
+      <div className="overflow">
         <img src={imageSource} alt="a wallpaper" className="" />
-      </figure>
-      <div className="">
-        <h3 className="">{title}</h3>
-        <h4 className="">{price} </h4>
-        <p className="">{description}</p>
+      </div>
+      <div className="card-body text-light">
+        <h1 className="card-title text-center text-dark">{title}</h1>
+        <h2 className="card-title text-dark">{price} </h2>
+        <p className="card-text text-secondary">{name}</p>
+        <p className="card-text text-secondary">{description}</p>
       </div>
     </div>
   );

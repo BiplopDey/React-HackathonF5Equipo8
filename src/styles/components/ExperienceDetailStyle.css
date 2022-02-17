@@ -1,5 +1,8 @@
 .exp-detail img{
     border-radius: initial;
-    max-height: 80vh;
-    margin: initial;
+    max-height: 70vh;
+}
+
+.exp-detail{
+    margin: 0;
 }
