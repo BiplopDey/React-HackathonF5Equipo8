@@ -44,7 +44,7 @@ export default function Home() {
           id: guide.id,
           img: guide.img,
           name: guide.name,
-          assessment: guide.valoration + "estrellas"
+          assessment: guide.valoration + " estrellas"
         }
       }))})
     },[])
