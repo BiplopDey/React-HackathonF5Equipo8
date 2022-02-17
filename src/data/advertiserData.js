@@ -9,11 +9,3 @@ export const advertiserList = [
   
   // id, img,  name, assessment 
 ];
-/*
-async function loadData(){
-
-  let endpoint = "http://localhost:5000/api/guides/";
-  let response = await fetch (endpoint);
-  let data = await response.json();
-  return data
-  }*/
