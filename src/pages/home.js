@@ -17,7 +17,7 @@ export default function Home() {
       <div>
       <Header/>
         <div className="container-fluid">
-          <h1>Experiencias Destacadas</h1>
+          
           <ExperienceCardList expList={expList} />
           <AdvertiserCardList advList={advList} />
         </div>

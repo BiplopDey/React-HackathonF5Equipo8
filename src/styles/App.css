@@ -2,6 +2,7 @@
 
 .scrolling{
     overflow-x: auto;
+    overflow-y: hidden;
 }
 .btn{
     border-radius: 1.5rem;
@@ -25,4 +26,9 @@
 
 img{
     object-fit: cover;
+}
+
+section{
+    margin:2rem;
+    padding: 2rem 0;
 }
