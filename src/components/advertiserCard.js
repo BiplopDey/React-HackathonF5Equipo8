@@ -9,7 +9,7 @@ export default function advertiserCard({ id, img, name, assessment }) {
             <figcaption>
                 <h3>{name}</h3>
                 <p>{assessment}</p>
-              </figcaption>
+            </figcaption>
             <button className="btn btn-primary">Ver más</button>
           </div>
       </figure>
