@@ -13,11 +13,12 @@ export default function ExperienceCardList({ expList }) {
                 id={exp.id}
                 img={exp.img}
                 title={exp.title}
-                fecha={exp.fecha}
-                nombreGuia={exp.nombreGuia}
+                date={exp.date}
+                guideName={exp.guideName}
                 description={exp.description}
-                categoria={exp.categoria}
-                precio={exp.precio}
+                category={exp.category}
+                price={exp.price}
+                location={exp.location}
             />
           </div>
         );

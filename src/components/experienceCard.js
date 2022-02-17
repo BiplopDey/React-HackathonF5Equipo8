@@ -1,10 +1,11 @@
-export default function ExperienceCard({ id, img, title }) {
+export default function ExperienceCard({ id, img, title, location }) {
   return (
     <div className="card card-block">
       <figure className="position-relative">
           <img src={img} alt=""/>
           <div className="card-featured position-absolute bottom-0">
             <figcaption>{title}</figcaption>
+            <figcaption>{location}</figcaption>
             <button className="btn btn-primary">Ver más</button>
           </div>
       </figure>
