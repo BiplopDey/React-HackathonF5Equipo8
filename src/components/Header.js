@@ -13,11 +13,22 @@ export default function ExperienceCardList({ expList }) {
                         <img  src={Logo} alt="Logo"
                             className="d-inline-block align-text-top"/>
                     </a>
+
+                    <button type="button" id="sidebarCollapse" className="btn btn-info">
+                        <i className="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
                 </div>
-                <div>
-                    <select name="" id="">
-                        <option value="">Selecciona País</option>
-                    </select>
+                <div className="d-flex justify-content-center">
+                    <form className="form-inline my-2 my-lg-0">
+                        <select name="" id="">
+                            <option value="">Elige la localidad</option>
+                            <option value="">Asturias</option>
+                            <option value="">Barcelona</option>
+                            <option value="">Bilbao</option>
+                            <option value="">Bogotá</option>
+                        </select>
+                    </form>
                 </div>
 
 

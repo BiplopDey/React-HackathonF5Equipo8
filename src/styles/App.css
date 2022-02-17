@@ -9,19 +9,20 @@
     border-radius: 1.5rem;
 }
 
-.btn-primary{
+.btn-primary, .btn-primary:visited{
     color: black;
     font-weight: bold;
     text-transform: uppercase;
     background-color: #ffa51f;
     border-color: #ffb702;
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+.btn-primary:hover, .btn-primary:active{
     background-color: #000000;
-    border-color: #000000;
+    border-color: #ffa51f;
+    color: #ffa51f;
 }
 
-.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus,  .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: none!important;;
 }
 
@@ -30,6 +31,7 @@ img{
 }
 
 section{
+    position: relative;
     margin:2rem;
     padding: 2rem 0;
 }
@@ -38,13 +40,61 @@ section:after {
     width: 300px;
     position: absolute;
     left: calc(50% - 150px);
-    bottom: -2.4rem;
+    bottom: -1.4rem;
     border-width: 0 0 2px;
     border: #ffa51f;
     border-style: solid;
 }
 
 figcaption p, figcaption h3 {
-    margin: 0;
+    margin: 0.2rem;
+}
+
+figcaption h3{
+    line-height: 1em;
+}
+
+input, select, .input, textarea{
+    border: none;
+    border-radius:8px;
+    background-color: #dfdad5;
+    padding: 0.5rem 1.5rem ;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+input, select, .input{
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+select{
+    padding-right: 4.5rem;
+    --height: 2.4rem;
+    height: var(--height);
+    /** for the dropdown indicator */
+    appearance: none;
+    transition: background .3s ease-out;
+    background-image:
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") ,
+            linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,1));
+    background-repeat:
+            no-repeat,
+            no-repeat;
+    background-position:
+            right 1rem center,
+            right;
+    background-size:
+            1rem,
+            3rem;
+}
+
+option{
+    padding: 2rem;
+}
+
+.bg-primary{
+    background-color: #ffa51f !important;
 }
 
