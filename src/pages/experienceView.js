@@ -1,3 +1,3 @@
 export default function ExperienceView() {
-  return <>Hola</>;
+  return <></>;
 }
