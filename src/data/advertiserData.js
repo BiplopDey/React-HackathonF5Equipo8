@@ -9,5 +9,3 @@ export const advertiserList = [
   
   // id, img,  name, assessment 
 ];
-
-
