@@ -11,7 +11,7 @@ export default function ExperienceCardList({ expList }) {
                 <div className="brand-container">
                     <a href="#">
                         <img  src={Logo} alt="Logo"
-                             className="d-inline-block align-text-top"/>
+                            className="d-inline-block align-text-top"/>
                     </a>
                 </div>
                 <div>

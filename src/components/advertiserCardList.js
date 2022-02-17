@@ -1,4 +1,4 @@
-import AdvertiserCard from "./experienceCard";
+import AdvertiserCard from "./advertiserCard";
 import '../styles/App.css';
 import "../styles/components/advertiserCard.css";
 
@@ -14,12 +14,8 @@ export default function AdvertiserCardList({ advList }) {
             <AdvertiserCard
                 id={exp.id}
                 img={exp.img}
-                title={exp.title}
-                fecha={exp.fecha}
-                nombreGuia={exp.nombreGuia}
-                description={exp.description}
-                categoria={exp.categoria}
-                precio={exp.precio}
+                name={exp.name}
+                assessment={exp.assessment}
             />
           </div>
         );
