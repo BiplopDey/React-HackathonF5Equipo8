@@ -7,7 +7,7 @@ import ScrollMenu from 'react-horizontal-scrolling-menu'; */
 
 import { advertiserList } from "../data/advertiserData";
 
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 
 
@@ -17,7 +17,24 @@ import Header from "../components/Header"
 
 export default function Home() {
   const expList = experienceList;
-  const advList = advertiserList;
+  const [advList,setAdvList] = useState(advertiserList);
+  async function loadGuides(){
+
+    let endpoint = "http://localhost:5000/api/guides";
+    let response = await fetch (endpoint);
+    let data = await response.json();
+    return data
+    }
+    useEffect(()=>{loadGuides().then(response => {
+      setAdvList(response.map((guide)=>{
+        return {
+          id: guide.id,
+          img: guide.img,
+          name: guide.name,
+          assessment: guide.valoration + "estrellas"
+        }
+      }))})
+    },[])
   return (
       <div>
       <Header/>
