@@ -5,7 +5,9 @@ import "../styles/components/experienceCard.css";
 
 export default function ExperienceCardList({ expList }) {
   return (
-    <section className="scrolling row flex-nowrap">
+    <section>
+      <h2>Experiencias Destacadas</h2>
+      <div className="scrolling row flex-nowrap">
       {expList.map((exp) => {
         return (
           <div  className="col-9 col-sm-5 col-md-3" key={exp.id}>
@@ -24,6 +26,7 @@ export default function ExperienceCardList({ expList }) {
           </div>
         );
       })}
+      </div>
     </section>
   );
 }

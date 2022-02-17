@@ -5,7 +5,9 @@ import "../styles/components/advertiserCard.css";
 
 export default function AdvertiserCardList({ advList }) {
   return (
-    <section className="scrolling row flex-nowrap">
+      <section>
+        <h2>Anunciantes Destacados</h2>
+        <div className="scrolling row flex-nowrap">
       {advList.map((exp) => {
         return (
           <div  className="col-9 col-sm-5 col-md-3" key={exp.id}>
@@ -22,6 +24,7 @@ export default function AdvertiserCardList({ advList }) {
           </div>
         );
       })}
-    </section>
+    </div>
+      </section>
   );
 }
