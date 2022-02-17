@@ -5,13 +5,13 @@ import { advertiserList } from "../data/advertiserData";
 export default function AdvertiserView() {
   let { id } = useParams();
   const exp = advertiserList.find((experience) => experience.id == id);
-  console.log(exp)
+  console.log(exp);
   return (
     <>
       <AdvertiserDetails
-        imageSource={exp.img}
+        img={exp.img}
         name={exp.name}
-        assessments={exp.assessment}
+        assessment={exp.assessment}
       />
     </>
   );
