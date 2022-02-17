@@ -35,19 +35,7 @@ export default function Home() {
     };
     
     useEffect(()=>{loadExperiences().then(response => {
-      setExpList(response.map((experience)=>{
-        return {
-          id: experience.id,
-          img: experience.img,
-          date: experience.date,
-          title: experience.title,
-          guideName: experience.guideName,
-          description: experience.description,
-          category: experience.category,
-          price: experience.price,
-          location: experience.location
-        }
-      }))})
+      setExpList(response)})
     },[]);
 
     useEffect(()=>{loadGuides().then(response => {
