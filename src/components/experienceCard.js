@@ -1,10 +1,13 @@
-export default function ExperienceCard({ id, guide, description }) {
+export default function ExperienceCard({ id, img, title }) {
   return (
-    <div>
-      <h2>
-        id: {id}, Guide Name: {guide}
-      </h2>
-      <h3>{description}</h3>
+    <div className="card card-block">
+      <figure className="position-relative">
+          <img src={img} alt=""/>
+          <div className="card-featured position-absolute bottom-0">
+            <figcaption>{title}</figcaption>
+            <button className="btn btn-primary">Ver más</button>
+          </div>
+      </figure>
     </div>
   );
 }

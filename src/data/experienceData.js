@@ -1,5 +1,12 @@
 export const experienceList = [
-  { id: 1, guide: "Foo", description: "Bazz" },
-  { id: 2, guide: "Foo", description: "Bazz" },
-  { id: 3, guide: "Foso", description: "Bazz" },
+  { id: 1, img: "https://img.freepik.com/foto-gratis/cascada-montanas-asturias_545448-8554.jpg?w=740", date: "mayo/2020", title: "Recorrido por Asturias", guideName: "Juan Perez", description: "lorem", category: "Climbing", price: "$100" },
+
+  { id: 2, img: "https://img.freepik.com/foto-gratis/tiro-medio-hombre-tomando-fotos_23-2148228554.jpg?w=740", date: "mayo/2020", title: "Foto-tour por Bogota", guideName: "Marcos Carranzo", description: "lorem", category: "Runing", price: "$120" },
+
+  { id: 3, img: "https://img.freepik.com/foto-gratis/vista-posterior-viajero-deportivo-mujer-camina-sobre-colina-traves-arboles-mira-abajo-lago-montana-disfruta-estar-solo-naturaleza_273609-25841.jpg?w=740", date: "mayo/2020", title: "Montañismo en Bilbao", guideName: "Manuela Domingues", description: "lorem", category: "Urban", price: "$150" },
+
+  { id: 4, img: "https://img.freepik.com/foto-gratis/cerrar-pareja-bicicletas-electricas_23-2149098685.jpg?w=740", date: "mayo/2020", title: "Recorrido por Barcelona", guideName: "Maria Alvarez", description: "lorem", category: "Nature", price: "$200" },
+
+
+  // id, img, title, guideName, date, category
 ];

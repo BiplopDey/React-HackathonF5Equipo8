@@ -1,1 +1,28 @@
 @import "./components/experienceCard.css";
+
+.scrolling{
+    overflow-x: auto;
+}
+.btn{
+    border-radius: 1.5rem;
+}
+
+.btn-primary{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffa51f;
+    border-color: #ffb702;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none!important;;
+}
+
+img{
+    object-fit: cover;
+}
