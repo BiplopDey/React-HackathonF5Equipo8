@@ -13,14 +13,6 @@ function ExperienceDetail({ imageSource, title, description, price, name }) {
         <h4 className="card-title text-dark">$ {price} </h4>
         <p className="card-text text-secondary">{name}</p>
         <p className="card-text text-secondary">{description}</p>
-        <a
-          href="#/"
-          target="_blank"
-          className="btn btn-outline-secondary border-1"
-          rel="noreferrer"
-        >
-          Ver más
-        </a>
       </div>
     </div>
   );
