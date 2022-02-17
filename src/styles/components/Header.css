@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+.brand-container{
+    display: flex;
+    justify-content: center;
+}
+.header img{
+    max-width: 300px;
+}
