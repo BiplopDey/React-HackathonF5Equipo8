@@ -16,15 +16,40 @@ import "../styles/components/experienceCard.css";
 import Header from "../components/Header"
 
 export default function Home() {
-  const expList = experienceList;
+  const [expList,setExpList] = useState(experienceList);
   const [advList,setAdvList] = useState(advertiserList);
+  
+  async function loadExperiences(){
+
+    let endpoint = "http://localhost:5000/api/experiences";
+    let response = await fetch (endpoint);
+    let data = await response.json();
+    return data
+  };
   async function loadGuides(){
 
     let endpoint = "http://localhost:5000/api/guides";
     let response = await fetch (endpoint);
     let data = await response.json();
     return data
-    }
+    };
+    
+    useEffect(()=>{loadExperiences().then(response => {
+      setExpList(response.map((experience)=>{
+        return {
+          id: experience.id,
+          img: experience.img,
+          date: experience.date,
+          title: experience.title,
+          guideName: experience.guideName,
+          description: experience.description,
+          category: experience.category,
+          price: experience.price,
+          location: experience.location
+        }
+      }))})
+    },[]);
+
     useEffect(()=>{loadGuides().then(response => {
       setAdvList(response.map((guide)=>{
         return {
