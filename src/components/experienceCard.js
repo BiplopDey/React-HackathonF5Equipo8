@@ -8,9 +8,9 @@ export default function ExperienceCard({ id, img, title, location }) {
           <div className="card-featured position-absolute bottom-0">
             <figcaption>{title}</figcaption>
             <figcaption>{location}</figcaption>
-            <Link to={`/experience/${id}`}>
-              <button className="btn btn-primary">Ver mas</button>
-          </Link>
+            <Link className="btn btn-primary" to={`/experience/${id}`}>
+              Ver mas
+            </Link>
           </div>
       </figure>
     </div>
