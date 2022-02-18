@@ -1,17 +1,13 @@
 import { useParams } from "react-router-dom";
 import ExperienceDetail from "../components/experienceDetail";
 import { experienceList } from "../data/experienceData";
-import Header from "../components/Header";
 import React from "react";
-import NavBar from "../components/NavBar";
 
 export default function ExperienceView() {
   let { id } = useParams();
   const exp = experienceList.find((experience) => experience.id == id);
 
   return (
-    <div>
-        <Header/>
         <ExperienceDetail
             imageSource={exp.img}
             title={exp.title}
@@ -19,7 +15,5 @@ export default function ExperienceView() {
             price={exp.price}
             name={exp.name}
         />
-        <NavBar/>
-    </div>
   );
 }

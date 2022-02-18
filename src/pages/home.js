@@ -7,6 +7,7 @@ import '../styles/App.css';
 import "../styles/components/experienceCard.css";
 import Header from "../components/Header"
 import NavBar from "../components/NavBar";
+import Prefer from "../components/Prefer";
 
 export default function Home() {
   const [expList,setExpList] = useState([]);
@@ -49,6 +50,7 @@ export default function Home() {
           <AdvertiserCardList advList={advList} />
         </div>
           <NavBar/>
+          <Prefer/>
       </div>
   );
 }
