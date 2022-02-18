@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function ExperienceCard({ id, img, title, location }) {
+  console.log(ExperienceCard)
   return (
     <div className="card card-block">
       <figure className="position-relative">
