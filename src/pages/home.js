@@ -1,11 +1,7 @@
 import ExperienceCardList from "../components/experienceCardList";
 import AdvertiserCardList from "../components/advertiserCardList";
-import { experienceList } from "../data/experienceData";
-import { advertiserList } from "../data/advertiserData";
 
-import React, { Component, useEffect, useState } from 'react';
-import ScrollMenu from 'react-horizontal-scrolling-menu';
-
+import React, { useEffect, useState } from 'react';
 
 import '../styles/App.css';
 import "../styles/components/experienceCard.css";
@@ -13,8 +9,8 @@ import Header from "../components/Header"
 import NavBar from "../components/NavBar";
 
 export default function Home() {
-  const [expList,setExpList] = useState(experienceList);
-  const [advList,setAdvList] = useState(advertiserList);
+  const [expList,setExpList] = useState([]);
+  const [advList,setAdvList] = useState([]);
   
   async function loadExperiences(){
 
